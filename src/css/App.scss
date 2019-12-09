@@ -1,0 +1,114 @@
+@import '~antd/dist/antd.css';
+
+.app {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  //min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: -1vh;
+  height: 90vh;
+  .ant-tabs-tab {
+    background-color: '#fff';
+    &:hover {
+      color: '#fff' !important;
+      background-color: '#fff';
+      border-color: '#fff';
+    }
+  }
+  //background-position: center;
+}
+
+.logo {
+  position: fixed;
+  z-index: 2;
+  top: 0.5rem;
+  left: 1rem;
+  width: 8vw;
+  img {
+    width: 100%;
+  }
+}
+
+.main {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 5rem;
+  top: -1vh;
+  align-content: center;
+  align-items: center;
+}
+
+.header-background {
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 5rem;
+  top: -1vh;
+  height: 90vh;
+  background-image: url('../images/fundoHeader.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  align-items: center;
+}
+
+.main-header {
+  padding-bottom: 2rem;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  .title {
+    font-size: 2rem;
+  }
+  .app-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    img {
+      margin: 1rem;
+      width: 70%;
+      cursor: pointer;
+    }
+  }
+}
+
+.phones {
+  position: relative;
+  width: 30vw;
+  height: 60vh;
+  padding: 1rem;
+  overflow: hidden;
+  padding-top: 5rem;
+  align-content: center;
+  background-image: url('../images/phones.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
