@@ -160,14 +160,15 @@
     }
   }
 
-  /* &_footer {
+  &_footer {
     @include flexCenter(column);
 
     background-color: #4d4d4d;
     color: #fff;
 
     width: 100%;
-    height: 50vh;
+    height: auto;
+    padding: 2rem 0rem;
 
     .title {
       font-size: $title-font;
@@ -187,5 +188,5 @@
         z-index: 6;
       }
     }
-  } */
+  }
 }

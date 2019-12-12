@@ -130,7 +130,7 @@ class MainPage extends React.Component {
           </div>
         </div>
 
-        {/* <div className="main_footer">
+        <div className="main_footer">
           <div className="title">Get your app now</div>
           <div className="msg">
             Sdqjsbkkbasdkjbajkdbjkasb bdoaisdosahdh
@@ -147,7 +147,7 @@ class MainPage extends React.Component {
               alt="playStoreBlack"
             />
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
