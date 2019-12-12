@@ -1,0 +1,36 @@
+.header {
+  @include flexCenter(row);
+
+  width: 100vw;
+  height: 12vh;
+  padding: 1rem;
+
+  text-decoration: none; /* no underline */
+  background-color: $primary-color;
+
+  &_titles {
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: $text-font;
+
+    -webkit-transition: all 0.5s ease;
+    -webkit-transition: font-size 0.7s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.7s;
+
+    &:hover {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
+
+  &_logo {
+    position: absolute;
+    z-index: 2;
+    left: 2vw;
+
+    img {
+      width: 6vw;
+    }
+  }
+}

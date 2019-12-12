@@ -1,0 +1,76 @@
+.partners {
+  @include flexCenter(column);
+
+  height: auto;
+  width: 100%;
+
+  &_title {
+    margin: 3rem;
+    .title {
+      font-size: $title-font;
+    }
+    .msg {
+      font-size: 1.5rem;
+    }
+  }
+  &_info {
+    @include flexCenterWrap(row);
+
+    .box {
+      @include flexCenter(column);
+
+      padding: 3vw 5vh;
+      margin: 2rem;
+      width: 20vw;
+      min-width: 13rem;
+      height: auto;
+
+      font-size: $text-font;
+      text-align: left;
+
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      img {
+        width: 50%;
+        min-width: 30%;
+      }
+      &_title {
+        font-size: 1.5rem;
+      }
+
+      &_msg {
+        font-size: $text-font;
+      }
+    }
+  }
+  &_contact {
+    @include flexCenter(column);
+    .title {
+      font-size: $title-font;
+    }
+    .msg {
+      font-size: 2rem;
+    }
+    .email {
+      @include flexCenterWrap(row);
+
+      width: 60vw;
+      min-width: 30rem;
+      height: auto;
+      margin: 3rem;
+      padding: 5rem;
+
+      font-size: 4vw;
+
+      color: #fff;
+
+      background-color: $primary-color;
+
+      &_name {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

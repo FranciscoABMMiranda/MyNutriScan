@@ -1,12 +1,5 @@
 import React from 'react';
 
-const benefitsKeys = [
-  'Personalized Recomendations',
-  'Be Healthy',
-  'Informed Decisions',
-  'Save Time',
-];
-
 const benefits = {
   'Personalized Recomendations': {
     img: (
@@ -77,14 +70,15 @@ class MainPage extends React.Component {
     return (
       <div className="box" key={key}>
         {benefits[key]['img']}
-        <div className="box_title">{key}</div>
+        <div className="box_title">
+          <b>{key}</b>
+        </div>
         <div className="box_msg">{benefits[key]['msg']}</div>
       </div>
     );
   }
 
   renderWorksBox(key) {
-    console.log(key);
     return (
       <div className="box" key={key}>
         <div className="box_title">{key}</div>
@@ -123,7 +117,7 @@ class MainPage extends React.Component {
             You can get MyNutriScan on the App Store or on Google Play{' '}
           </div>
           <div className="benefits">
-            {benefitsKeys.map(this.renderBenefits)}
+            {Object.keys(benefits).map(this.renderBenefits)}
           </div>
           <div className="works">
             <div className="works_boxes">

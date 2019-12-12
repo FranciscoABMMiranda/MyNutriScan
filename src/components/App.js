@@ -9,6 +9,7 @@ import '../css/App.scss';
 import Header from './Header';
 import Footer from './Footer';
 import MainPage from './MainPage';
+import Partners from './Partners';
 
 class App extends React.Component {
   state = {
@@ -28,7 +29,7 @@ class App extends React.Component {
 
     tabLinks = {
       'Página Inicial': '/',
-      Parceiros: '/partners',
+      Parceiros: '/Partners',
       FAQs: '/FAQs',
       Contactos: '/Contacts',
     };
@@ -47,6 +48,11 @@ class App extends React.Component {
             exact
             path="/"
             render={(props) => <MainPage></MainPage>}
+          ></Route>
+          <Route
+            exact
+            path="/Partners"
+            render={(props) => <Partners></Partners>}
           ></Route>
           <Footer
             tabTitles={this.state.tabTitles}

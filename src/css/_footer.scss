@@ -1,0 +1,136 @@
+.footer {
+  @include flexCenterFooter(row);
+  width: 100%;
+  height: 20vh;
+
+  z-index: 2;
+
+  &_background {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+
+    background: url('../images/food.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    z-index: -1;
+  }
+  &_logo {
+    position: absolute;
+    z-index: 2;
+    left: 5vw;
+    margin-top: 6rem;
+
+    img {
+      width: 6vw;
+    }
+  }
+
+  &_content {
+    @include flexCenter(row);
+
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+
+    margin-top: 10vh;
+    width: 90%;
+    height: 40vh;
+
+    .tabs {
+      @include flexCenter(column);
+
+      width: 27vw;
+      margin: 3vw;
+
+      &_titles {
+        @media screen and (min-width: $screen-min) {
+          font-size: $text-font;
+        }
+        @media screen and (max-width: $screen-max) {
+          font-size: 3vw;
+        }
+        cursor: pointer;
+        margin-top: 2vh;
+        color: #000;
+
+        -webkit-transition: all 0.3s ease;
+        -webkit-transition: font-size 0.3s; /* For Safari 3.1 to 6.0 */
+        transition: font-size 0.7s;
+        &:hover {
+          @media screen and (min-width: $screen-min) {
+            font-size: 1.5rem;
+          }
+          @media screen and (max-width: $screen-max) {
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+
+    .apps {
+      @include flexCenter(column);
+
+      margin: 5vw;
+      width: 27vw;
+
+      &_title {
+        @media screen and (min-width: $screen-min) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: $screen-max) {
+          font-size: 3vw;
+        }
+      }
+      &_icons {
+        @include flexCenter(row);
+
+        img {
+          @media screen and (min-width: $screen-min) {
+            width: 55%;
+          }
+          @media screen and (max-width: $screen-max) {
+            width: 65%;
+          }
+          margin: 2vw;
+          margin-top: 2rem;
+          cursor: pointer;
+          z-index: 6;
+        }
+      }
+    }
+    .social {
+      @include flexCenter(column);
+
+      margin-left: 10vw;
+      width: 10vw;
+
+      &_title {
+        @media screen and (min-width: $screen-min) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: $screen-max) {
+          font-size: 3vw;
+        }
+      }
+
+      &_icons {
+        @include flexCenter(row);
+
+        img {
+          @media screen and (min-width: $screen-min) {
+            width: 20%;
+          }
+          @media screen and (max-width: $screen-max) {
+            width: 25%;
+          }
+          margin: 1vw;
+          margin-top: 2rem;
+          cursor: pointer;
+          z-index: 6;
+        }
+      }
+    }
+  }
+}
