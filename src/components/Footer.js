@@ -22,9 +22,9 @@ class Footer extends React.Component {
       );
     } else {
       return (
-        <a className="tabs_titles" key={i} href={'#about'}>
+        <Link className="tabs_titles" key={i} to={'/#about'}>
           {tabTitles[i]}
-        </a>
+        </Link>
       );
     }
   }

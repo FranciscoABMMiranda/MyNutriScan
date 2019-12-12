@@ -1,14 +1,14 @@
 .footer {
-  @include flexCenterFooter(row);
+  @include flexCenter(row);
   width: 100%;
-  height: 20vh;
+  height: 23rem;
 
   z-index: 2;
 
   &_background {
     position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 23rem;
 
     background: url('../images/food.png');
     background-repeat: no-repeat;
@@ -21,7 +21,6 @@
     position: absolute;
     z-index: 2;
     left: 5vw;
-    margin-top: 6rem;
 
     img {
       width: 6vw;
@@ -34,9 +33,8 @@
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 
-    margin-top: 10vh;
     width: 90%;
-    height: 40vh;
+    height: 15rem;
 
     .tabs {
       @include flexCenter(column);

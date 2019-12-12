@@ -51,7 +51,7 @@
     }
   }
 
-  &_phones {
+  /*  &_phones {
     top: 14rem;
     position: relative;
     width: 30vw;
@@ -63,16 +63,14 @@
     background-image: url('../images/phones.png');
     background-repeat: no-repeat;
     background-size: contain;
-  }
+  } */
 
   &_about {
     width: 100%;
     height: auto;
-    min-height: 120rem;
 
     padding: 1rem;
     padding-top: 5rem;
-    height: 290vh;
 
     margin-top: 3rem;
 
@@ -162,7 +160,7 @@
     }
   }
 
-  &_footer {
+  /* &_footer {
     @include flexCenter(column);
 
     background-color: #4d4d4d;
@@ -189,5 +187,5 @@
         z-index: 6;
       }
     }
-  }
+  } */
 }

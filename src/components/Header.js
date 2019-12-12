@@ -22,7 +22,7 @@ class Header extends React.Component {
       );
     } else {
       return (
-        <a className="header_titles" key={i} href={'#about'}>
+        <a className="header_titles" key={i} href={'/#about'}>
           {tabTitles[i]}
         </a>
       );
