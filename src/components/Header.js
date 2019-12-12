@@ -1,48 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const headerTitles = [
-  'Página Inicial',
-  'Como Funciona',
-  'Parceiros',
-  'FAQs',
-  'Contactos',
-];
-
-const headerLinks = {
-  'Página Inicial': '/',
-  Parceiros: '/partners',
-  FAQs: '/FAQs',
-  Contactos: '/Contacts',
-};
+import PropTypes from 'prop-types';
 
 class Header extends React.Component {
+  static propTypes = {
+    tabTitles: PropTypes.array,
+    tabLinks: PropTypes.object,
+  };
+
   renderHeader(i) {
-    if (headerTitles[i] !== 'Como Funciona') {
+    const { tabTitles, tabLinks } = this.props;
+    if (tabTitles[i] !== 'Como Funciona') {
       return (
         <Link
           className="header_titles"
           key={i}
-          to={headerLinks[headerTitles[i]]}
+          to={tabLinks[tabTitles[i]]}
         >
-          {headerTitles[i]}
+          {tabTitles[i]}
         </Link>
       );
     } else {
       return (
         <a className="header_titles" key={i} href={'#about'}>
-          {headerTitles[i]}
+          {tabTitles[i]}
         </a>
       );
     }
   }
 
   render() {
-    const titles = Object.keys(headerTitles);
+    const titles = Object.keys(this.props.tabTitles);
     return (
-      <div>
-        <div className="header">{titles.map(this.renderHeader)}</div>
-        <div className="logo">
+      <div className="header">
+        {titles.map(this.renderHeader.bind(this))}
+
+        <div className="header_logo">
           <img src={require('../images/logo.png')} alt="logo" />
         </div>
       </div>
