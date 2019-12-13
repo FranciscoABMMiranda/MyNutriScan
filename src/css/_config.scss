@@ -4,6 +4,7 @@ $text-font: 1rem;
 $primary-color: rgb(35, 218, 143);
 $screen-max: 800px;
 $screen-min: 801px;
+$height-header: 12vh;
 
 @mixin flexCenter($direction) {
   display: flex;

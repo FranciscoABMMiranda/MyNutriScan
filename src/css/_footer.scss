@@ -13,8 +13,8 @@
     background: url('../images/food.png');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
     z-index: -1;
   }
   &_logo {
@@ -38,9 +38,8 @@
 
     .tabs {
       @include flexCenter(column);
-
+      align-items: flex-start;
       width: 27vw;
-      margin: 3vw;
 
       &_titles {
         @media screen and (min-width: $screen-min) {
@@ -70,12 +69,11 @@
     .apps {
       @include flexCenter(column);
 
-      margin: 5vw;
       width: 27vw;
 
       &_title {
         @media screen and (min-width: $screen-min) {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
         }
         @media screen and (max-width: $screen-max) {
           font-size: 3vw;
@@ -91,7 +89,7 @@
           @media screen and (max-width: $screen-max) {
             width: 65%;
           }
-          margin: 2vw;
+          margin: 1vw;
           margin-top: 2rem;
           cursor: pointer;
           z-index: 6;
@@ -106,7 +104,7 @@
 
       &_title {
         @media screen and (min-width: $screen-min) {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
         @media screen and (max-width: $screen-max) {
           font-size: 3vw;
@@ -123,7 +121,7 @@
           @media screen and (max-width: $screen-max) {
             width: 25%;
           }
-          margin: 1vw;
+          margin: 0.5vw;
           margin-top: 2rem;
           cursor: pointer;
           z-index: 6;

@@ -27,6 +27,7 @@ class FAQs extends React.Component {
   renderPanels() {
     var { activePanels } = this.state;
   }
+
   onChangePanel(info) {
     var { activePanels } = this.state;
     activePanels = info;

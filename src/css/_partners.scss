@@ -1,16 +1,19 @@
 .partners {
   @include flexCenter(column);
 
-  height: auto;
   width: 100%;
+  height: auto;
+
+  margin-top: $height-header;
 
   &_title {
     margin: 3rem;
+    margin-top: $height-header;
     .title {
       font-size: $title-font;
     }
     .msg {
-      font-size: 1.5rem;
+      font-size: $text-font;
     }
   }
   &_info {

@@ -1,0 +1,99 @@
+$border-color: #e6e6e6;
+@mixin box($width, $min-width) {
+  width: $width;
+  min-width: $min-width;
+  padding: 1rem 1rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.contacts {
+  @include flexCenter(column);
+
+  &_header {
+    margin: 3rem;
+    margin-top: $height-header;
+    .title {
+      font-size: $title-font;
+    }
+    .msg {
+      font-size: $text-font;
+    }
+  }
+
+  &_content {
+    @include flexCenterWrap(row);
+
+    margin-bottom: 3rem;
+
+    .info_box {
+      @include flexCenter(column);
+      align-items: flex-start;
+
+      font-size: $text-font;
+      padding: 1rem;
+      width: 30vw;
+      min-width: 20rem;
+
+      height: auto;
+      border: 1px solid $border-color;
+      border-radius: 2px;
+
+      &_item {
+        margin: 0.5rem;
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .form {
+    }
+  }
+  &_form {
+    @include flexCenter(column);
+    margin: 3rem;
+    .box {
+      @include box(30vw, 15rem);
+
+      &:focus {
+        outline: 0;
+      }
+
+      &_msg {
+        @include box(30vw, 15rem);
+        padding-top: -3rem;
+        height: 10rem;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    .small {
+      @include flexCenter(row);
+      justify-content: space-between;
+      width: 30vw;
+
+      &_box {
+        @include box(45%, 7rem);
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: #fff;
+
+      width: 30vw;
+      padding: 1rem;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}

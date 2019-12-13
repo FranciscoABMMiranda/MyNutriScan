@@ -4,10 +4,11 @@
   height: auto;
   width: 100%;
 
-  margin-top: -2px;
+  margin-top: $height-header;
   z-index: -1;
 
   &_header {
+    margin-top: -2px;
     @include flexCenter(column);
 
     position: relative;
@@ -64,7 +65,9 @@
     background-repeat: no-repeat;
     background-size: contain;
   } */
-
+  .link {
+    margin-top: 3.1rem;
+  }
   &_about {
     width: 100%;
     height: auto;
@@ -72,16 +75,14 @@
     padding: 1rem;
     padding-top: 5rem;
 
-    margin-top: 3rem;
-
+    margin-top: -1rem;
     background-image: url('../images/fundoTransparente.png');
     background-repeat: no-repeat;
     background-size: cover;
 
     color: #000;
-
     .title {
-      margin-top: 6rem;
+      margin-top: 2rem;
       font-size: $title-font;
     }
 
@@ -94,6 +95,7 @@
         min-width: 15rem;
         width: 20vw;
         height: auto;
+        max-height: 21rem;
         padding: 1rem;
 
         background-color: #fff;
@@ -121,15 +123,16 @@
     .works {
       @include flexCenterWrap(row);
 
-      margin-top: 15rem;
+      margin-top: 8rem;
       margin-left: -1rem;
       width: 100vw;
 
       border-top: 2px solid lightgrey;
 
       img {
+        //phone
         margin-top: 5rem;
-        width: 28vw;
+        width: 24vw;
         min-width: 15rem;
       }
 
@@ -163,12 +166,12 @@
   &_footer {
     @include flexCenter(column);
 
-    background-color: #4d4d4d;
+    background-color: rgb(38, 35, 35);
     color: #fff;
 
     width: 100%;
     height: auto;
-    padding: 2rem 0rem;
+    padding: 6rem 0rem;
 
     .title {
       font-size: $title-font;
@@ -182,8 +185,8 @@
       @include flexCenter(row);
 
       img {
-        width: 40%;
-        margin: 1rem;
+        width: 30%;
+        margin: 0.5rem;
         cursor: pointer;
         z-index: 6;
       }

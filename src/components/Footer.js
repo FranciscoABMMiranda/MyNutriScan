@@ -59,7 +59,9 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="social">
-            <div className="social_title">Follow us</div>
+            <div className="social_title">
+              <b>Follow us</b>
+            </div>
             <div className="social_icons">
               <img
                 className="img"

@@ -11,6 +11,7 @@ import Footer from './Footer';
 import MainPage from './MainPage';
 import Partners from './Partners';
 import FAQs from './FAQs';
+import Contacts from './Contacts';
 
 class App extends React.Component {
   state = {
@@ -59,6 +60,11 @@ class App extends React.Component {
             exact
             path="/FAQs"
             render={(props) => <FAQs></FAQs>}
+          ></Route>
+          <Route
+            exact
+            path="/Contacts"
+            render={(props) => <Contacts></Contacts>}
           ></Route>
           <Footer
             tabTitles={this.state.tabTitles}

@@ -110,8 +110,8 @@ class MainPage extends React.Component {
             <img src={require('../images/phones.png')} alt="phones" />
           </div>
         </div>
+        <a className="link" name="about"></a>
         <div className="main_about">
-          <a name="about"></a>
           <div className="title">About the App</div>
           <div className="msg">
             You can get MyNutriScan on the App Store or on Google Play{' '}
