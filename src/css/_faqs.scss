@@ -1,0 +1,28 @@
+.faqs {
+  @include flexCenter(column);
+
+  &_header {
+    margin: 3rem;
+    .title {
+      font-size: $title-font;
+    }
+    .msg {
+      font-size: $text-font;
+    }
+  }
+  &_answers {
+    @include flexCenter(column);
+
+    .title {
+      font-size: $sub-title-font;
+    }
+
+    .table {
+      margin: 3rem;
+    }
+    .ant-collapse-header[aria-expanded='true']:not(i) {
+      //update color of header
+      color: $primary-color !important;
+    }
+  }
+}

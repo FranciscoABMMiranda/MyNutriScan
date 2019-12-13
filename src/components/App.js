@@ -10,6 +10,7 @@ import Header from './Header';
 import Footer from './Footer';
 import MainPage from './MainPage';
 import Partners from './Partners';
+import FAQs from './FAQs';
 
 class App extends React.Component {
   state = {
@@ -53,6 +54,11 @@ class App extends React.Component {
             exact
             path="/Partners"
             render={(props) => <Partners></Partners>}
+          ></Route>
+          <Route
+            exact
+            path="/FAQs"
+            render={(props) => <FAQs></FAQs>}
           ></Route>
           <Footer
             tabTitles={this.state.tabTitles}
