@@ -12,6 +12,7 @@ import MainPage from './MainPage';
 import Partners from './Partners';
 import FAQs from './FAQs';
 import Contacts from './Contacts';
+import { BackTop } from 'antd';
 
 class App extends React.Component {
   state = {
@@ -46,6 +47,14 @@ class App extends React.Component {
             tabTitles={this.state.tabTitles}
             tabLinks={this.state.tabLinks}
           ></Header>
+          <div className="top">
+            <BackTop />
+            <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}>
+              {' '}
+              gray{' '}
+            </strong>
+            button.
+          </div>
           <Route
             exact
             path="/"
