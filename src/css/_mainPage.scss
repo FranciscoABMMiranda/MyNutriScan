@@ -4,7 +4,6 @@
   height: auto;
   width: 100%;
 
-  margin-top: $height-header;
   z-index: -1;
 
   &_header {
@@ -23,7 +22,7 @@
     color: #fff;
 
     .title {
-      margin-top: 10rem;
+      margin-top: 16rem;
       font-size: $title-font;
     }
     .msg {
@@ -34,7 +33,7 @@
       @include flexCenter(row);
 
       width: 20vw;
-      margin-top: 2rem;
+      margin-top: 1rem;
 
       img {
         cursor: pointer;
@@ -73,7 +72,7 @@
     padding: 1rem;
     padding-top: 5rem;
 
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
 
     background-image: url('../images/fundoTransparente.png');

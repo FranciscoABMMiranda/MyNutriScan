@@ -75,11 +75,6 @@ class App extends React.Component {
           <a name="top"></a>
           <div className="top">
             <BackTop />
-            <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}>
-              {' '}
-              gray{' '}
-            </strong>
-            button.
           </div>
           <Route
             exact

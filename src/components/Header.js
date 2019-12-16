@@ -1,12 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import $ from 'jquery';
 
 class Header extends React.Component {
   static propTypes = {
     tabTitles: PropTypes.array,
     tabLinks: PropTypes.object,
   };
+
+  componentDidMount() {
+    if (window.location.pathname !== '/') {
+      $('div.header').toggleClass('stopped');
+    }
+    $(window).scroll(function(event) {
+      if (event.target.location.pathname === '/') {
+        $('div.header').toggleClass(
+          'scrolled',
+          $(this).scrollTop() > 80,
+        );
+      }
+    });
+  }
 
   renderHeader(i) {
     const { tabTitles, tabLinks } = this.props;
