@@ -11,20 +11,26 @@ class Footer extends React.Component {
   renderTabs(i) {
     const { tabTitles, tabLinks } = this.props;
     if (tabTitles[i] !== 'Como Funciona') {
-      return (
-        <Link
-          className="tabs_titles"
-          key={i}
-          to={tabLinks[tabTitles[i]]}
-        >
-          {tabTitles[i]}
-        </Link>
-      );
+      if (tabTitles[i] !== 'Página Inicial') {
+        var ref = tabLinks[tabTitles[i]] + '/#top';
+        console.log(ref);
+        return (
+          <a className="tabs_titles" key={i} href={ref}>
+            {tabTitles[i]}
+          </a>
+        );
+      } else {
+        return (
+          <a className="tabs_titles" key={i} href={'/#top'}>
+            {tabTitles[i]}
+          </a>
+        );
+      }
     } else {
       return (
-        <Link className="tabs_titles" key={i} to={'/#about'}>
+        <a className="tabs_titles" key={i} href={'/#about'}>
           {tabTitles[i]}
-        </Link>
+        </a>
       );
     }
   }
@@ -63,21 +69,36 @@ class Footer extends React.Component {
               <b>Follow us</b>
             </div>
             <div className="social_icons">
-              <img
-                className="img"
-                src={require('../images/facebook.png')}
-                alt="facebook"
-              />
-              <img
-                className="img"
-                src={require('../images/instagram.png')}
-                alt="instagram"
-              />
-              <img
-                className="img"
-                src={require('../images/linkedin.png')}
-                alt="linkedin"
-              />
+              <a
+                href="https://www.facebook.com/mynutriscan/"
+                target="_blank"
+              >
+                <img
+                  className="img"
+                  src={require('../images/facebook.png')}
+                  alt="facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/my.nutriscan/"
+                target="_blank"
+              >
+                <img
+                  className="img"
+                  src={require('../images/instagram.png')}
+                  alt="instagram"
+                />
+              </a>
+              <a
+                href="https://pt.linkedin.com/company/mynutriscan"
+                target="_blank"
+              >
+                <img
+                  className="img"
+                  src={require('../images/linkedin.png')}
+                  alt="linkedin"
+                />
+              </a>
             </div>
           </div>
         </div>

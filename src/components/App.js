@@ -18,6 +18,21 @@ class App extends React.Component {
   state = {
     tabTitles: [],
     tabLinks: {},
+    currentPage: 0,
+  };
+
+  constructor(props) {
+    super(props);
+    this.workRef = React.createRef();
+    this.setState({
+      currentPage: 'Página Inicial',
+    });
+  }
+
+  setCurrentPage = (page) => {
+    var { currentPage } = this.state;
+    currentPage = page;
+    this.setState({ currentPage });
   };
 
   componentDidMount() {
@@ -46,7 +61,11 @@ class App extends React.Component {
           <Header
             tabTitles={this.state.tabTitles}
             tabLinks={this.state.tabLinks}
+            currentPage={this.state.currentPage}
+            workRef={this.workRef}
+            setCurrentPage={this.setCurrentPage}
           ></Header>
+          <a name="top"></a>
           <div className="top">
             <BackTop />
             <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}>
@@ -58,7 +77,9 @@ class App extends React.Component {
           <Route
             exact
             path="/"
-            render={(props) => <MainPage></MainPage>}
+            render={(props) => (
+              <MainPage workRef={this.workRef}></MainPage>
+            )}
           ></Route>
           <Route
             exact

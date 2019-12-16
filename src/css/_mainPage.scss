@@ -65,9 +65,7 @@
     background-repeat: no-repeat;
     background-size: contain;
   } */
-  .link {
-    margin-top: 3.1rem;
-  }
+
   &_about {
     width: 100%;
     height: auto;
@@ -75,7 +73,9 @@
     padding: 1rem;
     padding-top: 5rem;
 
-    margin-top: -1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
     background-image: url('../images/fundoTransparente.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@
       @include flexCenterWrap(row);
 
       margin-top: 3rem;
-
+      margin-bottom: 5rem;
       .box {
         min-width: 15rem;
         width: 20vw;
@@ -120,10 +120,16 @@
       }
     }
 
+    .link {
+      position: absolute;
+      margin-top: 1rem;
+    }
+
     .works {
       @include flexCenterWrap(row);
 
-      margin-top: 8rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       margin-left: -1rem;
       width: 100vw;
 
@@ -132,7 +138,7 @@
       img {
         //phone
         margin-top: 5rem;
-        width: 24vw;
+        width: 23vw;
         min-width: 15rem;
       }
 

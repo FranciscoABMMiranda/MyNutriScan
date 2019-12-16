@@ -52,7 +52,7 @@
       padding: 3vw 7vh;
       margin: 2rem;
       margin-right: 6rem;
-      width: 20vw;
+      width: 17vw;
       min-width: 13rem;
       height: auto;
 
@@ -64,7 +64,7 @@
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       img {
-        width: 50%;
+        width: 60%;
         min-width: 30%;
       }
       &_title {
@@ -99,6 +99,8 @@
 
       background-color: $primary-color;
 
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
       &_name {
         margin-left: 2rem;
       }

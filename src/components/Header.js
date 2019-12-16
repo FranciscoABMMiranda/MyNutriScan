@@ -11,15 +11,30 @@ class Header extends React.Component {
   renderHeader(i) {
     const { tabTitles, tabLinks } = this.props;
     if (tabTitles[i] !== 'Como Funciona') {
-      return (
-        <Link
+      {
+        /* <Link
           className="header_titles"
           key={i}
           to={tabLinks[tabTitles[i]]}
         >
           {tabTitles[i]}
-        </Link>
-      );
+        </Link> */
+      }
+      if (tabTitles[i] !== 'Página Inicial') {
+        var ref = tabLinks[tabTitles[i]] + '/#top';
+        console.log(ref);
+        return (
+          <a className="header_titles" key={i} href={ref}>
+            {tabTitles[i]}
+          </a>
+        );
+      } else {
+        return (
+          <a className="header_titles" key={i} href={'/#top'}>
+            {tabTitles[i]}
+          </a>
+        );
+      }
     } else {
       return (
         <a className="header_titles" key={i} href={'/#about'}>

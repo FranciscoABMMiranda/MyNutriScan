@@ -29,6 +29,7 @@
 
   &_content {
     @include flexCenter(row);
+    justify-content: space-around;
 
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
@@ -41,12 +42,14 @@
       align-items: flex-start;
       width: 27vw;
 
+      margin-left: 3rem;
+
       &_titles {
         @media screen and (min-width: $screen-min) {
           font-size: $text-font;
         }
         @media screen and (max-width: $screen-max) {
-          font-size: 3vw;
+          font-size: 2.5vw;
         }
         cursor: pointer;
         margin-top: 2vh;
@@ -60,7 +63,7 @@
             font-size: 1.5rem;
           }
           @media screen and (max-width: $screen-max) {
-            font-size: 3.5vw;
+            font-size: 3vw;
           }
         }
       }
@@ -68,7 +71,7 @@
 
     .apps {
       @include flexCenter(column);
-
+      margin-left: -4rem;
       width: 27vw;
 
       &_title {
@@ -113,18 +116,21 @@
 
       &_icons {
         @include flexCenter(row);
-
-        img {
-          @media screen and (min-width: $screen-min) {
-            width: 20%;
-          }
-          @media screen and (max-width: $screen-max) {
-            width: 25%;
-          }
+        width: 12vw;
+        a {
           margin: 0.5vw;
-          margin-top: 2rem;
-          cursor: pointer;
-          z-index: 6;
+          img {
+            @media screen and (min-width: $screen-min) {
+              width: 90%;
+            }
+            @media screen and (max-width: $screen-max) {
+              width: 95%;
+            }
+
+            margin-top: 2rem;
+            cursor: pointer;
+            z-index: 6;
+          }
         }
       }
     }

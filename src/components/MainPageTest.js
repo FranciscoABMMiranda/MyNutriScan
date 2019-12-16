@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const benefits = {
   'Personalized Recomendations': {
@@ -66,6 +68,44 @@ const boxesInfo = {
 };
 
 class MainPage extends React.Component {
+  static propTypes = {
+    tabTitles: PropTypes.array,
+    tabLinks: PropTypes.object,
+  };
+
+  handleScroll() {
+    const { workRef } = this.props;
+    window.scrollTo({
+      top: workRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+
+  renderHeader(i) {
+    const { tabTitles, tabLinks } = this.props;
+    if (tabTitles[i] !== 'Como Funciona') {
+      return (
+        <Link
+          className="header_titles"
+          key={i}
+          to={tabLinks[tabTitles[i]]}
+        >
+          {tabTitles[i]}
+        </Link>
+      );
+    } else {
+      return (
+        <button
+          className="header_titles"
+          key={i}
+          onClick={this.handleScroll.bind(this)}
+        >
+          {tabTitles[i]}
+        </button>
+      );
+    }
+  }
+
   renderBenefits(key) {
     return (
       <div className="box" key={key}>
@@ -88,11 +128,18 @@ class MainPage extends React.Component {
   }
 
   render() {
+    const titles = Object.keys(this.props.tabTitles);
     const { workRef } = this.props;
     return (
       <div className="main">
+        <div className="header">
+          {titles.map(this.renderHeader.bind(this))}
+
+          <div className="header_logo">
+            <img src={require('../images/logo.png')} alt="logo" />
+          </div>
+        </div>
         <div className="main_header">
-          {/* <div className="background"></div> */}
           <div className="title">Get your app now</div>
           <div className="msg">
             You can get MyNutriScan on the App Store or on Google Play{' '}
@@ -119,11 +166,9 @@ class MainPage extends React.Component {
           <div className="benefits">
             {Object.keys(benefits).map(this.renderBenefits)}
           </div>
-          <div className="link">
-            <a name="about"></a>
-          </div>
           <div className="works">
-            <div ref={workRef}></div>
+            <div ref={workRef}>oi</div>
+            <a className="link" name="about"></a>
             <div className="works_boxes">
               {boxesLeft.map(this.renderWorksBox)}
             </div>
