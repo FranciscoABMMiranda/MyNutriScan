@@ -19,6 +19,7 @@ class App extends React.Component {
     tabTitles: [],
     tabLinks: {},
     currentPage: 0,
+    message: {},
   };
 
   constructor(props) {
@@ -28,6 +29,12 @@ class App extends React.Component {
       currentPage: 'Página Inicial',
     });
   }
+
+  setMessage = (newMessage) => {
+    var { message } = this.state;
+    message = newMessage;
+    this.setState({ message });
+  };
 
   setCurrentPage = (page) => {
     var { currentPage } = this.state;
@@ -94,7 +101,12 @@ class App extends React.Component {
           <Route
             exact
             path="/Contacts"
-            render={(props) => <Contacts></Contacts>}
+            render={(props) => (
+              <Contacts
+                message={this.state.message}
+                setMessage={this.setMessage}
+              ></Contacts>
+            )}
           ></Route>
           <Footer
             tabTitles={this.state.tabTitles}

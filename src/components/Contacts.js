@@ -41,7 +41,10 @@ class Contacts extends React.Component {
             {Object.keys(contactInfo).map(this.renderInfo)}
           </div>
           <div className="form">
-            <ContactFormTest></ContactFormTest>
+            <ContactFormTest
+              message={this.props.message}
+              setMessage={this.props.setMessage}
+            ></ContactFormTest>
           </div>
         </div>
       </div>

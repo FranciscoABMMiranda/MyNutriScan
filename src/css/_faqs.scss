@@ -1,5 +1,6 @@
 .faqs {
   @include flexCenter(column);
+  margin-top: 2rem;
 
   &_header {
     margin: 3rem;

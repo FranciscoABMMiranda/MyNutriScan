@@ -13,7 +13,6 @@ class Footer extends React.Component {
     if (tabTitles[i] !== 'Como Funciona') {
       if (tabTitles[i] !== 'Página Inicial') {
         var ref = tabLinks[tabTitles[i]] + '/#top';
-        console.log(ref);
         return (
           <a className="tabs_titles" key={i} href={ref}>
             {tabTitles[i]}

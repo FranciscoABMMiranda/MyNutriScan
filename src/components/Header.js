@@ -22,7 +22,6 @@ class Header extends React.Component {
       }
       if (tabTitles[i] !== 'Página Inicial') {
         var ref = tabLinks[tabTitles[i]] + '/#top';
-        console.log(ref);
         return (
           <a className="header_titles" key={i} href={ref}>
             {tabTitles[i]}
