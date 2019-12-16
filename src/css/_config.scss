@@ -5,6 +5,8 @@ $primary-color: rgb(35, 218, 143);
 $screen-max: 800px;
 $screen-min: 801px;
 $height-header: 12vh;
+$width-title: 40vw;
+$width-msg: 50vw;
 
 @mixin flexCenter($direction) {
   display: flex;

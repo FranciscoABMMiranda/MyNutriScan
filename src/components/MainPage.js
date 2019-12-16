@@ -1,7 +1,7 @@
 import React from 'react';
 
 const benefits = {
-  'Personalized Recomendations': {
+  'Recomendações personalizadas': {
     img: (
       <img
         src={require('../images/search.png')}
@@ -9,9 +9,9 @@ const benefits = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'Preenche o teu plano e obtém a informação mais relevante para ti.',
   },
-  'Be Healthy': {
+  'Ser saudável': {
     img: (
       <img
         src={require('../images/heart.png')}
@@ -19,9 +19,9 @@ const benefits = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'Faz decisões mais saudáveis, selecionando os produtos que vão de encontro às tuas necessidades. ',
   },
-  'Informed Decisions': {
+  'Decisões informadas': {
     img: (
       <img
         src={require('../images/search.png')}
@@ -29,9 +29,9 @@ const benefits = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'Conhece melhor cada produto alimentar e descobre se é adequado para ti.',
   },
-  'Save Time': {
+  'Poupa tempo': {
     img: (
       <img
         src={require('../images/clock.png')}
@@ -39,29 +39,29 @@ const benefits = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'Ler rótulos de produtos alimentares pode demorar até 10x mais do que fazer um scan.',
   },
 };
 
-const boxesLeft = ['Choose', 'Personalize'];
-const boxesRight = ['Side and Scan', 'Enjoy'];
+const boxesLeft = ['Escolhe', 'Personaliza'];
+const boxesRight = ['Side and Scan', 'Aproveita'];
 
 const boxesInfo = {
-  Choose: {
+  Escolhe: {
     msg:
-      'Select between one of our pre-defined diet modes or create your own even more complete and personalized.',
+      'Seleciona um dos planos pré-definidos ou cria o teu próprio plano, mais completo e personalizado.',
   },
-  Personalize: {
+  Personaliza: {
     msg:
-      'Select between one of our pre-defined diet modes or create your own even more complete and personalized.',
+      'Preenche o teu plano, incluindo informação desde alergias e intolerâncias aos teus objetivos. ',
   },
   'Side and Scan': {
     msg:
-      'Select between one of our pre-defined diet modes or create your own even more complete and personalized.',
+      'Depois de um plano selecionado, aponta a câmara do teu telemóvel para o código de barras do produto.',
   },
-  Enjoy: {
+  Aproveita: {
     msg:
-      'Select between one of our pre-defined diet modes or create your own even more complete and personalized.',
+      'Recebe feedback que te permitirá fazer uma escolha mais saudável e informada.',
   },
 };
 
@@ -93,9 +93,13 @@ class MainPage extends React.Component {
       <div className="main">
         <div className="main_header">
           {/* <div className="background"></div> */}
-          <div className="title">Get your app now</div>
+          <div className="title">
+            Decisões mais saudáveis no supermercado?
+          </div>
           <div className="msg">
-            You can get MyNutriScan on the App Store or on Google Play{' '}
+            Com a MyNutriScan, escolher os produtos alimentares que
+            melhor se adaptam às tuas necessidades nunca foi tão
+            fácil.
           </div>
           <div className="app-buttons">
             <img
@@ -112,9 +116,16 @@ class MainPage extends React.Component {
           </div>
         </div>
         <div className="main_about">
-          <div className="title">About the App</div>
+          <div className="title">Sobre a Aplicação</div>
           <div className="msg">
-            You can get MyNutriScan on the App Store or on Google Play{' '}
+            A MyNutriScan permite, de uma forma rápida, simples e
+            intuitiva, quebrar a barreira da leitura e interpretação
+            dos rótulos de produtos alimentares, promovendo um estilo
+            de vida mais saudável. Como? Cruzando as tuas necessidades
+            nutricionais com a informação nutricional do produto
+            alimentar e fornecendo feedback personalizado. O nosso
+            objectivo? Ser o teu nutricionista digital de
+            supermercado.{' '}
           </div>
           <div className="benefits">
             {Object.keys(benefits).map(this.renderBenefits)}
@@ -135,9 +146,11 @@ class MainPage extends React.Component {
         </div>
 
         <div className="main_footer">
-          <div className="title">Get your app now</div>
+          <div className="title">Faz já o download</div>
           <div className="msg">
-            Sdqjsbkkbasdkjbajkdbjkasb bdoaisdosahdh
+            O primeiro passo para adoção de um estilo de vida
+            saudável, começa no momento de escolha de um produto
+            alimentar no supermercado.
           </div>
           <div className="btns">
             <img

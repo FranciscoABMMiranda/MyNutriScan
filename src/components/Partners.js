@@ -36,7 +36,8 @@ const CustomRightArrow = ({ onClick }) => {
 };
 
 const partners = {
-  Supermarket1: {
+  Supermarket: {
+    title: 'Supermercado (Retalho)',
     img: (
       <img
         src={require('../images/search.png')}
@@ -44,9 +45,10 @@ const partners = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que pretendam seguir uma alimentação saudável. Caso seja um representante de uma cadeia de supermercados e esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos. Acreditamos que a melhoria da experiência dos consumidores através do uso da aplicação conferiria ao seu supermercado uma significativa vantagem competitiva.',
   },
-  Supermarket2: {
+  Gym: {
+    title: 'Ginásios',
     img: (
       <img
         src={require('../images/heart.png')}
@@ -56,7 +58,19 @@ const partners = {
     msg:
       'The recommendations after scanning a product will be according to your specifi profile.',
   },
-  Supermarket3: {
+  Health: {
+    title: 'Associações e Empresas de saúde',
+    img: (
+      <img
+        src={require('../images/search.png')}
+        alt={'Informed Decisions'}
+      ></img>
+    ),
+    msg:
+      'The recommendations after scanning a product will be according to your specifi profile.',
+  },
+  Government: {
+    title: 'Governo',
     img: (
       <img
         src={require('../images/search.png')}
@@ -73,7 +87,7 @@ class Partners extends React.Component {
     return (
       <div className="box" key={key}>
         {partners[key]['img']}
-        <div className="box_title">{key}</div>
+        <div className="box_title">{partners[key]['title']}</div>
         <div className="box_msg">{partners[key]['msg']}</div>
       </div>
     );
