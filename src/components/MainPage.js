@@ -50,18 +50,22 @@ const boxesInfo = {
   Escolhe: {
     msg:
       'Seleciona um dos planos pré-definidos ou cria o teu próprio plano, mais completo e personalizado.',
+    number: '1',
   },
   Personaliza: {
     msg:
       'Preenche o teu plano, incluindo informação desde alergias e intolerâncias aos teus objetivos. ',
+    number: '2',
   },
   'Side and Scan': {
     msg:
       'Depois de um plano selecionado, aponta a câmara do teu telemóvel para o código de barras do produto.',
+    number: '3',
   },
   Aproveita: {
     msg:
       'Recebe feedback que te permitirá fazer uma escolha mais saudável e informada.',
+    number: '4',
   },
 };
 
@@ -81,7 +85,9 @@ class MainPage extends React.Component {
   renderWorksBox(key) {
     return (
       <div className="box" key={key}>
-        <div className="box_title">{key}</div>
+        <div className="box_title">
+          {boxesInfo[key]['number']}. {key}
+        </div>
         <div className="box_msg">{boxesInfo[key]['msg']}</div>
       </div>
     );

@@ -20,8 +20,8 @@
   &_logo {
     position: absolute;
     z-index: 2;
-    left: 5vw;
-
+    left: 3vw;
+    margin-bottom: 3rem;
     img {
       width: 6vw;
     }
@@ -42,7 +42,7 @@
       align-items: flex-start;
       width: 27vw;
 
-      margin-left: 3rem;
+      margin-left: 4rem;
 
       &_titles {
         @media screen and (min-width: $screen-min) {
