@@ -4,7 +4,7 @@ const benefits = {
   'Recomendações personalizadas': {
     img: (
       <img
-        src={require('../images/search.png')}
+        src={require('../images/womanShadow.png')}
         alt={'Personalized Recomendations'}
       ></img>
     ),
@@ -14,7 +14,7 @@ const benefits = {
   'Ser saudável': {
     img: (
       <img
-        src={require('../images/heart.png')}
+        src={require('../images/heartShadow.png')}
         alt={'Be Healthy'}
       ></img>
     ),
@@ -24,7 +24,7 @@ const benefits = {
   'Decisões informadas': {
     img: (
       <img
-        src={require('../images/search.png')}
+        src={require('../images/searchShadow.png')}
         alt={'Informed Decisions'}
       ></img>
     ),
@@ -34,7 +34,7 @@ const benefits = {
   'Poupa tempo': {
     img: (
       <img
-        src={require('../images/clock.png')}
+        src={require('../images/clockShadow.png')}
         alt={'Save Time'}
       ></img>
     ),
@@ -144,7 +144,14 @@ class MainPage extends React.Component {
             <div className="works_boxes">
               {boxesLeft.map(this.renderWorksBox)}
             </div>
-            <img src={require('../images/phone.png')} alt="phone" />
+            {/* <img src={require('../images/phone.png')} alt="phone" /> */}
+            <video width="320" height="240" loop autoPlay>
+              <source
+                src={require('../images/phoneVideoBorderless.mp4')}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <div className="works_boxes">
               {boxesRight.map(this.renderWorksBox)}
             </div>

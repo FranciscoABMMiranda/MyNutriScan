@@ -40,7 +40,7 @@ const partners = {
     title: 'Supermercado (Retalho)',
     img: (
       <img
-        src={require('../images/search.png')}
+        src={require('../images/cartShadow.png')}
         alt={'Personalized Recomendations'}
       ></img>
     ),
@@ -51,7 +51,7 @@ const partners = {
     title: 'Ginásios',
     img: (
       <img
-        src={require('../images/heart.png')}
+        src={require('../images/heartShadow.png')}
         alt={'Be Healthy'}
       ></img>
     ),
@@ -62,7 +62,7 @@ const partners = {
     title: 'Associações e Empresas de saúde',
     img: (
       <img
-        src={require('../images/search.png')}
+        src={require('../images/charityShadow.png')}
         alt={'Informed Decisions'}
       ></img>
     ),
@@ -73,7 +73,7 @@ const partners = {
     title: 'Governo',
     img: (
       <img
-        src={require('../images/search.png')}
+        src={require('../images/cityHallShadow.png')}
         alt={'Informed Decisions'}
       ></img>
     ),

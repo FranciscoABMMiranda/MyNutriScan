@@ -53,11 +53,10 @@
       padding: 3vw 7vh;
       margin: 1rem;
 
+      overflow: auto;
       width: 20vw;
       min-width: 13rem;
-      height: auto;
-      min-height: 22rem;
-
+      height: 25rem;
       font-size: $text-font;
       text-align: center;
       background-color: #fff;
