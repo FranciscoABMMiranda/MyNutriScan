@@ -47,8 +47,8 @@ class Footer extends React.Component {
           </div>
           <div className="apps">
             <div className="apps_title">
-              Available on your favorite platform.{' '}
-              <b>Download now!</b>
+            Disponível na tua plataforma favorita.<br/>{' '}
+              <b>Faz já o download!</b>
             </div>
             <div className="apps_icons">
               <img
@@ -65,7 +65,7 @@ class Footer extends React.Component {
           </div>
           <div className="social">
             <div className="social_title">
-              <b>Follow us</b>
+              <b>Segue-nos</b>
             </div>
             <div className="social_icons">
               <a

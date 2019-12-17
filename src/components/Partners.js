@@ -56,7 +56,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades ?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que pretendam seguir uma alimentação saudável que, em combinação com a prática do exercício físico, leve a um bem-estar físico e mental. Acreditamos que o nosso produto facilitaria os praticantes de desporto a seguir a alimentação que precisam e que é definida pelos seus PTs de modo a atingir os resultados ambicionados. Oferecer esta ferramenta aos seus utilizadores iria conferir ao seu ginásio uma significativa vantagem competitiva. Caso seja um representante de um ginásio e esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
   },
   Health: {
     title: 'Associações e Empresas de saúde',
@@ -67,7 +67,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades ?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que apresentem restrições alimentares, independentemente da sua razão (intolerâncias, alergias, doenças, gravidez, amamentação, ...). Acreditamos que o nosso produto auxiliaria no momento da escolha dos produtos alimentares que vão de encontro às respectivas restrições alimentares de cada um. Proporcionar esta ferramenta aos seus associados/clientes certamente iria aumentar a sua qualidade de vida, aumentando asism a vantagem competitiva da sua assoicação/empresa. Caso esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
   },
   Government: {
     title: 'Governo',
