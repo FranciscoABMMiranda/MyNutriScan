@@ -74,6 +74,9 @@
         @media screen and (min-width: $screen-min) {
           width: 35vw;
         }
+        @media screen and (min-width: $screen-min2) {
+          width: 30vw;
+        }
         @media screen and (max-width: $screen-max) {
           width: 55vw;
         }
