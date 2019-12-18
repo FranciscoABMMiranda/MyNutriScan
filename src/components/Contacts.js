@@ -30,9 +30,9 @@ class Contacts extends React.Component {
     return (
       <div className="contacts">
         <div className="contacts_header">
-          <div className="title">Contate-nos!</div>
+          <div className="title">Contacte-nos!</div>
           <div className="msg">
-            Não hesites em entrar em contato connosco para mais informações!
+            Não hesites em entrar em contacto connosco para mais informações!
           </div>
         </div>
         <div className="contacts_content">

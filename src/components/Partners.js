@@ -45,7 +45,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que pretendam seguir uma alimentação saudável. Caso seja um representante de uma cadeia de supermercados e esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos. Acreditamos que a melhoria da experiência dos consumidores através do uso da aplicação conferiria ao seu supermercado uma significativa vantagem competitiva.',
+      'Caso seja um representante de uma cadeia de supermercados e esteja interessado em saber mais sobre a MyNutriScan e, potencialmente, fazer uma parceria, contacte-nos. Acreditamos que a melhoria da experiência dos consumidores através do uso da aplicação conferiria ao seu supermercado uma significativa vantagem competitiva.'
   },
   Gym: {
     title: 'Ginásios',
@@ -56,7 +56,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades ?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que pretendam seguir uma alimentação saudável que, em combinação com a prática do exercício físico, leve a um bem-estar físico e mental. Acreditamos que o nosso produto facilitaria os praticantes de desporto a seguir a alimentação que precisam e que é definida pelos seus PTs de modo a atingir os resultados ambicionados. Oferecer esta ferramenta aos seus utilizadores iria conferir ao seu ginásio uma significativa vantagem competitiva. Caso seja um representante de um ginásio e esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
+      'A MyNutriScan constitui uma ferramenta indispensável a todos os utilizadores que pretendam seguir uma alimentação saudável que, em combinação com a prática do exercício físico, leve a um bem-estar físico e mental. Acreditamos que o nosso produto facilitaria os praticantes de desporto a seguir a alimentação que precisam de modo a atingir os resultados ambicionados. Oferecer esta ferramenta aos seus utilizadores iria conferir ao seu ginásio uma significativa vantagem competitiva. Caso seja um representante de um ginásio e esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
   },
   Health: {
     title: 'Associações e Empresas de saúde',
@@ -67,7 +67,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'A MyNutriScan, através do seu algoritmo nutricional personalizado e das suas funcionalidades ?, apresenta-se como uma ferramenta indispensável a todos os utilizadores que apresentem restrições alimentares, independentemente da sua razão (intolerâncias, alergias, doenças, gravidez, amamentação, ...). Acreditamos que o nosso produto auxiliaria no momento da escolha dos produtos alimentares que vão de encontro às respectivas restrições alimentares de cada um. Proporcionar esta ferramenta aos seus associados/clientes certamente iria aumentar a sua qualidade de vida, aumentando asism a vantagem competitiva da sua assoicação/empresa. Caso esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
+      'A MyNutriScan constitui uma ferramenta indispensável a todos os utilizadores que apresentem restrições alimentares, como por exemplo: intolerâncias, alergias, doenças, gravidez e amamentação através do auxilio no momento da escolha dos produtos alimentares que vão de encontro às necessidades alimentares de cada um. Proporcionar esta ferramenta aos seus clientes/associados certamente iria aumentar a sua qualidade de vida, aumentando assim a vantagem competitiva da sua empresa/associação. Caso esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
   },
   Government: {
     title: 'Governo',
@@ -78,7 +78,7 @@ const partners = {
       ></img>
     ),
     msg:
-      'The recommendations after scanning a product will be according to your specifi profile.',
+      'A MyNutriScan, através do auxilio das decisões de compras no supermercado, constitui uma ferramenta essencial para a promoção uma alimentação saudável, contribuindo assim para a prevenção de doenças crónicas. Para organizações governamentais, oferecemos a possibilidade de integrar as recomendações nutricionais oficiais na nossa aplicação, bem como fornecer informação adicional para, por exemplo, melhorar a constituição de alimentos embalados. Caso esteja interessado em saber mais sobre o produto e, potencialmente, fazer uma parceria, contacte-nos.',
   },
 };
 
@@ -117,7 +117,7 @@ class Partners extends React.Component {
           <div className="title">
             <b>Interessado em ser nosso parceiro?</b>
           </div>
-          <div className="msg">Entre em contato!</div>
+          <div className="msg">Entre em contacto!</div>
           <div className="email">
             <Icon type="mail" />
             <div className="email_name">
