@@ -48,7 +48,7 @@ class Footer extends React.Component {
           <div className="apps">
             <div className="apps_title">
             Disponível na tua plataforma favorita.<br/>{' '}
-              <b>Faz já o download!</b>
+              <b>Brevemente</b>
             </div>
             <div className="apps_icons">
               <img

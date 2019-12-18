@@ -18,41 +18,31 @@ class ContactFormTest extends React.Component {
         <input
           type="text"
           className="box"
-          placeholder="Name*"
+          placeholder="Nome*"
           required
           onChange={this.handleChange.bind(this, 'name')}
         />
-        <div className="small">
-          <input
-            type="text"
-            className="small_box"
-            placeholder="Email*"
-            required
-            onChange={this.handleChange.bind(this, 'mail')}
-          />
-          <input
-            type="number"
-            className="small_box"
-            placeholder="Phone*"
-            required
-            onChange={this.handleChange.bind(this, 'phone')}
-          />
-        </div>
         <input
           type="text"
           className="box"
-          placeholder="Inquiry Type*"
+          placeholder="Email"
+          onChange={this.handleChange.bind(this, 'mail')}
+        />
+        <input
+          type="text"
+          className="box"
+          placeholder="Assunto*"
           required
           onChange={this.handleChange.bind(this, 'inquiry')}
         />
         <textarea
           className="box_msg"
-          placeholder="Message"
+          placeholder="Menssagem*"
           cols="40"
           rows="5"
           onChange={this.handleChange.bind(this, 'msg')}
         />
-        <input type="submit" className="btn" value="SEND MESSAGE " />
+        <input type="submit" className="btn" value="Enviar Mensagem" />
       </form>
     );
   }

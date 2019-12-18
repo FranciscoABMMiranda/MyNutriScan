@@ -44,7 +44,7 @@ const benefits = {
 };
 
 const boxesLeft = ['Escolhe', 'Personaliza'];
-const boxesRight = ['Side and Scan', 'Aproveita'];
+const boxesRight = ['Desliza e faz Scan', 'Aproveita'];
 
 const boxesInfo = {
   Escolhe: {
@@ -57,7 +57,7 @@ const boxesInfo = {
       'Preenche o teu plano, incluindo informação desde alergias e intolerâncias aos teus objetivos. ',
     number: '2',
   },
-  'Side and Scan': {
+  'Desliza e faz Scan': {
     msg:
       'Depois de um plano selecionado, aponta a câmara do teu telemóvel para o código de barras do produto.',
     number: '3',
@@ -103,11 +103,11 @@ class MainPage extends React.Component {
             Decisões mais saudáveis no supermercado?
           </div>
           <div className="msg">
-            Com a MyNutriScan, escolher os produtos alimentares que
-            melhor se adaptam às tuas necessidades nunca foi tão
-            fácil.
+            <b>Com a MyNutriScan, escolher os produtos alimentares que
+            melhor se adaptam<br/> às tuas necessidades nunca foi tão
+            fácil.</b>
           </div>
-          <div className="app-buttons">
+          {/*<div className="app-buttons">
             <img
               src={require('../images/appStore.png')}
               alt="appSTore"
@@ -116,7 +116,7 @@ class MainPage extends React.Component {
               src={require('../images/googlePlay.png')}
               alt="google"
             />
-          </div>
+    </div>*/}
           <div className="phones">
             <img src={require('../images/phones.png')} alt="phones" />
           </div>
@@ -159,7 +159,7 @@ class MainPage extends React.Component {
         </div>
 
         <div className="main_footer">
-          <div className="title">Faz já o download</div>
+          <div className="title">Brevemente na tua loja favorita.</div>
           <div className="msg">
             O primeiro passo para adoção de um estilo de vida
             saudável, começa no momento de escolha de um produto
