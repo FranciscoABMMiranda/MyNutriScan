@@ -64,18 +64,6 @@ class ContactForm extends React.Component {
             ],
           })(<Input />)}
         </Form.Item>
-        <Form.Item>
-          {getFieldDecorator('phone', {
-            rules: [
-              {
-                required: true,
-                message: 'Please input your phone number!',
-              },
-            ],
-          })(
-            <Input style={{ width: '100%' }} placeholder="*Phone" />,
-          )}
-        </Form.Item>
         <Form.Item {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">
             Register

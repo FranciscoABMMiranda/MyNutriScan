@@ -44,7 +44,7 @@ const benefits = {
 };
 
 const boxesLeft = ['Escolhe', 'Personaliza'];
-const boxesRight = ['Side and Scan', 'Aproveita'];
+const boxesRight = ['Desliza e faz Scan', 'Aproveita'];
 
 const boxesInfo = {
   Escolhe: {
@@ -57,7 +57,7 @@ const boxesInfo = {
       'Preenche o teu plano, incluindo informação desde alergias e intolerâncias aos teus objetivos. ',
     number: '2',
   },
-  'Side and Scan': {
+  'Desliza e faz Scan': {
     msg:
       'Depois de um plano selecionado, aponta a câmara do teu telemóvel para o código de barras do produto.',
     number: '3',
@@ -103,9 +103,9 @@ class MainPage extends React.Component {
             Decisões mais saudáveis no supermercado?
           </div>
           <div className="msg">
-            Com a MyNutriScan, escolher os produtos alimentares que
+            <b>Com a MyNutriScan, escolher os produtos alimentares que
             melhor se adaptam às tuas necessidades nunca foi tão
-            fácil.
+            fácil.</b>
           </div>
           <div className="app-buttons">
             <img

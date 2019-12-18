@@ -96,9 +96,9 @@ class Partners extends React.Component {
     return (
       <div className="partners">
         <div className="partners_title">
-          <div className="title">Partners</div>
+          <div className="title">Parceiros</div>
           <div className="msg">
-            We have a lot of partners that wwe like!
+            Estas são algumas das instituições com quem trabalhamos!
           </div>
         </div>
         <Carousel
@@ -115,9 +115,9 @@ class Partners extends React.Component {
         </div> */}
         <div className="partners_contact">
           <div className="title">
-            <b>Interested in becoming a partner?</b>
+            <b>Interessado em ser nosso parceiro?</b>
           </div>
-          <div className="msg">Reach us now!</div>
+          <div className="msg">Entre em contato!</div>
           <div className="email">
             <Icon type="mail" />
             <div className="email_name">

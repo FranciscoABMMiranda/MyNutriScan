@@ -152,7 +152,7 @@ class FAQs extends React.Component {
         <div className="faqs_header">
           <div className="title">FAQs</div>
           <div className="msg">
-            You can find the answers you might be looking for below!
+            Podes encontrar a resposta para as tuas perguntas abaixo!
           </div>
         </div>
         <Carousel
