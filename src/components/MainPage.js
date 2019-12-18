@@ -104,7 +104,7 @@ class MainPage extends React.Component {
           </div>
           <div className="msg">
             <b>Com a MyNutriScan, escolher os produtos alimentares que
-            melhor se adaptam às tuas necessidades nunca foi tão
+            melhor se adaptam<br/> às tuas necessidades nunca foi tão
             fácil.</b>
           </div>
           {/*<div className="app-buttons">
